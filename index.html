@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orra — Sit down. Stay longer than you planned.</title>
+  <meta name="description" content="Orra is a furniture house. A sheesham living set, a bamboo side stand, a curved walnut library, and a burgundy velvet salon. Enquire on WhatsApp.">
+  <meta name="theme-color" content="#f3ece3">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Fraunces:ital,opsz,wght@0,9..144,460;0,9..144,560;1,9..144,460;1,9..144,560&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#collection">Skip to the collection</a>
+
+  <header class="nav">
+    <a class="lockup" href="#top">Orra <i>|</i> Wood</a>
+    <nav class="nav-links" aria-label="Pages">
+      <a href="#catalog">Furniture</a>
+      <a href="#collection">Projects</a>
+      <a href="#catalog">Archive</a>
+      <a href="#atelier">Studio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-tools">
+      <button type="button" id="search-open">Search</button>
+      <form class="nav-search" id="nav-search" hidden>
+        <input id="search-input" type="search" placeholder="A piece" aria-label="Search pieces">
+      </form>
+      <a href="#enquire">Account</a>
+      <a href="#enquire" id="nav-cart">Cart</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="hero" tabindex="0" aria-roledescription="carousel" aria-label="Collection, advancing every two seconds">
+      <div class="stage" id="stage">
+        <div class="track" id="track">
+          <figure class="frame" data-fit="sable">
+            <img src="images/sable.jpg?v=2" alt="Sheesham wood living set: a three-seater, a two-seater, an armchair, and matching timber tables in a warm evening room.">
+          </figure>
+          <figure class="frame" data-fit="reed">
+            <img src="images/bamboo.jpg?v=2" alt="Light bamboo side stand with three curved shelves beside a sofa, holding books, a cup, and a small vase.">
+          </figure>
+          <figure class="frame" data-fit="arc">
+            <img src="images/arc.jpg?v=2" alt="A sculptural dark walnut bookcase of continuous curves, filled with books and ceramics, standing on slim brass legs.">
+          </figure>
+          <figure class="frame" data-fit="burgundy">
+            <img src="images/burgundy.jpg?v=2" alt="A deep wine velvet sofa and chaise with teal and ochre cushions, beside tall windows.">
+          </figure>
+          <figure class="frame" data-fit="table">
+            <img src="images/table.jpg" alt="A long solid walnut dining table with two benches and a single ceramic bowl, in late light.">
+          </figure>
+        </div>
+      </div>
+      <div class="veil" aria-hidden="true"></div>
+      <div class="hero-fade" id="hero-meta">
+        <h1 class="giant giant-left" id="hero-word">Handmade</h1>
+        <p class="giant giant-right" id="hero-corner">Large<br>sofas</p>
+        <aside class="hero-note">
+          <p class="hero-kicker" id="hero-name">The Sable Set</p>
+          <p class="hero-blurb" id="hero-blurb">A six-seat sheesham room. Teak oil, cream linen, and tables in the same timber.</p>
+          <p class="hero-price" id="hero-price">₹2,48,000</p>
+          <a class="text-link" id="hero-more" href="#collection">Explore the selection</a>
+          <a class="text-link" id="hero-wa" href="#">Enquire on WhatsApp</a>
+        </aside>
+      </div>
+      <div class="pager">
+        <div class="pages" id="ticks" role="tablist" aria-label="Slides"></div>
+        <button type="button" id="prev" aria-label="Previous piece">Prev</button>
+        <button type="button" id="pause" aria-pressed="false">Pause</button>
+        <button type="button" id="next" aria-label="Next piece">Next</button>
+      </div>
+    </section>
+
+    <section class="materials" aria-label="Materials">
+      <p>One house. <em>Many pieces.</em></p>
+      <ul>
+        <li><strong>Sheesham</strong><span>Oiled, not glossed.</span></li>
+        <li><strong>Bamboo</strong><span>Light beside a sofa.</span></li>
+        <li><strong>Walnut</strong><span>One continuous curve.</span></li>
+        <li><strong>Velvet</strong><span>Wine, used once.</span></li>
+      </ul>
+    </section>
+
+    <section class="collection" id="collection">
+      <header class="section-head">
+        <p class="eyebrow">Portfolio <span class="eyebrow-rule"></span> The house</p>
+        <h2>Pieces we will actually make.</h2>
+      </header>
+
+      <article class="piece" id="sable">
+        <figure>
+          <img src="images/sable.jpg?v=2" alt="The Sable Set, a sheesham six-seat living room with cream upholstery.">
+        </figure>
+        <div class="piece-copy">
+          <p class="eyebrow">01 <span class="eyebrow-rule"></span> Living</p>
+          <h3>The Sable Set</h3>
+          <p class="price">₹2,48,000 <small>seating</small></p>
+          <p class="story">A six-seat living room in solid sheesham. The frames are cut square and left quiet, the cloth is a cream weave that takes the afternoon, and the two tables are the same timber so the room reads as one piece of work.</p>
+          <dl>
+            <div><dt>Timber</dt><dd>Solid sheesham, teak oil</dd></div>
+            <div><dt>Seating</dt><dd>Three-seater, two-seater, armchair</dd></div>
+            <div><dt>Cloth</dt><dd>Cream weave, loose cushions</dd></div>
+            <div><dt>Tables</dt><dd>Coffee table and console, ₹46,000</dd></div>
+            <div><dt>Lead</dt><dd>Five to seven weeks</dd></div>
+          </dl>
+          <div class="piece-actions">
+            <a class="btn" data-wa data-wa-text="Hello Orra, I would like to enquire about The Sable Set, seating at ₹2,48,000. Please tell me about timber, cloth, and lead time." href="#">Enquire on WhatsApp</a>
+            <button type="button" class="btn ghost hold" data-hold="The Sable Set">Hold this piece</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="piece piece-flip" id="reed">
+        <figure>
+          <img src="images/bamboo.jpg?v=2" alt="The Reed Stand, a bamboo side table with arched shelves beside a sofa.">
+        </figure>
+        <div class="piece-copy">
+          <p class="eyebrow">02 <span class="eyebrow-rule"></span> Beside the sofa</p>
+          <h3>The Reed Stand</h3>
+          <p class="price">₹24,800</p>
+          <p class="story">A bamboo stand for the arm of a sofa. Arched shelves hold the books, and the top is wide enough for a cup and a small vase. Small on the floor, useful every evening.</p>
+          <dl>
+            <div><dt>Material</dt><dd>Solid bamboo, natural finish</dd></div>
+            <div><dt>Form</dt><dd>Arched shelves, square top</dd></div>
+            <div><dt>Use</dt><dd>Books, a tray, the last cup of the day</dd></div>
+            <div><dt>Scale</dt><dd>Made to sit against a sofa arm</dd></div>
+            <div><dt>Lead</dt><dd>Three weeks</dd></div>
+          </dl>
+          <div class="piece-actions">
+            <a class="btn" data-wa data-wa-text="Hello Orra, I would like to enquire about The Reed Stand at ₹24,800." href="#">Enquire on WhatsApp</a>
+            <button type="button" class="btn ghost hold" data-hold="The Reed Stand">Hold this piece</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="piece" id="arc">
+        <figure>
+          <img src="images/arc.jpg?v=2" alt="The Arc Library, a curved walnut bookcase on brass legs.">
+        </figure>
+        <div class="piece-copy">
+          <p class="eyebrow">03 <span class="eyebrow-rule"></span> Library</p>
+          <h3>The Arc Library</h3>
+          <p class="price">₹1,86,000</p>
+          <p class="story">A library drawn as one continuous curve. Walnut, open compartments for books and the objects that live among them, and legs thin enough that the wood appears to rest just above the floor.</p>
+          <dl>
+            <div><dt>Timber</dt><dd>Walnut, hand-rubbed oil</dd></div>
+            <div><dt>Form</dt><dd>Continuous curve, open compartments</dd></div>
+            <div><dt>Legs</dt><dd>Slender brass</dd></div>
+            <div><dt>Span</dt><dd>About 240 cm, sized to the wall</dd></div>
+            <div><dt>Lead</dt><dd>Eight to ten weeks</dd></div>
+          </dl>
+          <div class="piece-actions">
+            <a class="btn" data-wa data-wa-text="Hello Orra, I would like to enquire about The Arc Library at ₹1,86,000. My wall length is " href="#">Enquire on WhatsApp</a>
+            <button type="button" class="btn ghost hold" data-hold="The Arc Library">Hold this piece</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="piece piece-flip" id="burgundy">
+        <figure>
+          <img src="images/burgundy.jpg?v=2" alt="The Burgundy Salon, a wine velvet sofa and chaise with teal and ochre cushions.">
+        </figure>
+        <div class="piece-copy">
+          <p class="eyebrow">04 <span class="eyebrow-rule"></span> Salon</p>
+          <h3>The Burgundy Salon</h3>
+          <p class="price">₹2,22,000 <small>sofa and chaise</small></p>
+          <p class="story">Tufted velvet in a deep wine, with a chaise to match. Teal and ochre cushions come with the set. This is the piece we use when a room of timber needs one note of jewellery, and no more.</p>
+          <dl>
+            <div><dt>Cloth</dt><dd>Cotton velvet, wine</dd></div>
+            <div><dt>Form</dt><dd>Tufted seat and back, low arms</dd></div>
+            <div><dt>With it</dt><dd>Chaise, teal and ochre cushions</dd></div>
+            <div><dt>Separately</dt><dd>Sofa ₹1,48,000 · chaise ₹74,000</dd></div>
+            <div><dt>Lead</dt><dd>Six to eight weeks</dd></div>
+          </dl>
+          <div class="piece-actions">
+            <a class="btn" data-wa data-wa-text="Hello Orra, I would like to enquire about The Burgundy Salon at ₹2,22,000 for the sofa and chaise." href="#">Enquire on WhatsApp</a>
+            <button type="button" class="btn ghost hold" data-hold="The Burgundy Salon">Hold this piece</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="piece" id="table">
+        <figure>
+          <img src="images/table.jpg" alt="The Long Table, a walnut dining table with two benches.">
+        </figure>
+        <div class="piece-copy">
+          <p class="eyebrow">05 <span class="eyebrow-rule"></span> Dining</p>
+          <h3>The Long Table</h3>
+          <p class="price">₹1,64,000 <small>table and benches</small></p>
+          <p class="story">One walnut top and two benches, cut thick and left quiet. It is the table for late light, a bowl in the middle, and however many people actually come.</p>
+          <dl>
+            <div><dt>Timber</dt><dd>Solid walnut, hand-rubbed oil</dd></div>
+            <div><dt>Form</dt><dd>Long top, two benches</dd></div>
+            <div><dt>Seats</dt><dd>Eight, comfortably</dd></div>
+            <div><dt>Length</dt><dd>About 240 cm, sized to the room</dd></div>
+            <div><dt>Lead</dt><dd>Six to eight weeks</dd></div>
+          </dl>
+          <div class="piece-actions">
+            <a class="btn" data-wa data-wa-text="Hello Orra, I would like to enquire about The Long Table at ₹1,64,000 for the table and two benches." href="#">Enquire on WhatsApp</a>
+            <button type="button" class="btn ghost hold" data-hold="The Long Table">Hold this piece</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <header class="section-head">
+        <p class="eyebrow">Catalogue <span class="eyebrow-rule"></span> Seventeen pieces</p>
+        <h2>The full house.</h2>
+      </header>
+      <div class="filters" role="tablist" aria-label="Filter the catalogue">
+        <button type="button" class="is-on" data-filter="all">All</button>
+        <button type="button" data-filter="Seating">Seating</button>
+        <button type="button" data-filter="Tables">Tables</button>
+        <button type="button" data-filter="Storage">Storage</button>
+        <button type="button" data-filter="Bedroom">Bedroom</button>
+      </div>
+      <div class="catalog-grid" id="catalog-grid"></div>
+      <article class="detail" id="detail" hidden></article>
+    </section>
+
+    <section class="atelier" id="atelier">
+      <div class="atelier-copy">
+        <p class="eyebrow">Atelier <span class="eyebrow-rule"></span> By appointment</p>
+        <h2>Tell us the room. We answer with timber and cloth.</h2>
+        <ol>
+          <li><span>01</span> Send a photograph of the room, and the wall you have in mind.</li>
+          <li><span>02</span> We reply on WhatsApp with finish, cloth, and a clear price.</li>
+          <li><span>03</span> The piece is made to that room. Not to a showroom plan.</li>
+        </ol>
+      </div>
+      <form class="enquire" id="enquire" action="#">
+        <label>
+          <span>Name</span>
+          <input name="name" autocomplete="name" required placeholder="Your name">
+        </label>
+        <label>
+          <span>Piece</span>
+          <select name="piece">
+            <option>The Sable Set</option>
+            <option>The Reed Stand</option>
+            <option>The Arc Library</option>
+            <option>The Burgundy Salon</option>
+            <option>The Long Table</option>
+            <option>A whole room</option>
+          </select>
+        </label>
+        <label>
+          <span>The room</span>
+          <textarea name="note" rows="4" placeholder="Light, size, what is already there."></textarea>
+        </label>
+        <button class="btn light" type="submit">Continue on WhatsApp</button>
+        <p class="form-note">Opens WhatsApp with your note already written. Nothing is stored on this page.</p>
+      </form>
+    </section>
+    <section class="contact" id="contact">
+      <header class="section-head">
+        <p class="eyebrow">Contact <span class="eyebrow-rule"></span> The atelier</p>
+        <h2>Come by, or write.</h2>
+      </header>
+      <div class="contact-grid">
+        <div>
+          <p class="eyebrow">Write</p>
+          <p><a id="contact-email" href="mailto:studio@orraatelier.com">studio@orraatelier.com</a></p>
+          <p><a id="contact-wa" data-wa data-wa-text="Hello Orra, I would like to visit the atelier." href="#">WhatsApp</a></p>
+        </div>
+        <div>
+          <p class="eyebrow">Address</p>
+          <address id="contact-address">
+            <strong>Orra Atelier</strong>
+            Street and number<br>
+            Area<br>
+            City, state, PIN
+          </address>
+          <a class="text-link contact-map" id="contact-map" href="#">Open in maps</a>
+        </div>
+        <div>
+          <p class="eyebrow">Hours</p>
+          <p id="contact-hours">Tuesday to Sunday, 11:00–7:00. Monday by appointment.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <p class="wordmark">Orra</p>
+      <p>Furniture, composed slowly.</p>
+    </div>
+    <p>Sit down. Stay longer than you planned.</p>
+    <p class="footer-line">WhatsApp <a data-wa data-wa-text="Hello Orra." href="#" id="footer-wa">line</a></p>
+  </footer>
+
+  <a class="float-wa" data-wa data-wa-text="Hello Orra, I would like to enquire about a piece." href="#" aria-label="Enquire on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.15 6.4 2.15 11.83c0 1.74.46 3.44 1.34 4.94L2 22l5.39-1.4a10.1 10.1 0 0 0 4.65 1.12h.01c5.46 0 9.89-4.4 9.89-9.84C21.94 6.4 17.5 2 12.04 2zm5.76 14.15c-.24.68-1.4 1.3-1.94 1.38-.5.07-1.12.1-1.81-.11-.42-.13-.95-.3-1.64-.59-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09 1-2.38.26-.28.57-.35.76-.35h.55c.17 0 .4-.07.63.48.24.57.8 1.97.87 2.11.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.13-.28.28-.12.54.16.26.7 1.16 1.51 1.88 1.04.92 1.91 1.21 2.18 1.34.27.14.43.12.59-.07.16-.19.68-.79.86-1.06.18-.28.36-.23.6-.14.24.09 1.54.73 1.8.86.27.13.44.2.51.31.06.11.06.64-.18 1.32z"/></svg>
+  </a>
+
+  <div class="held" id="held" hidden>
+    <p><span id="held-count">0</span> held</p>
+    <button type="button" class="btn light" id="held-send">Send on WhatsApp</button>
+    <button type="button" class="text-btn" id="held-clear">Clear</button>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
